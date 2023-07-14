@@ -28,6 +28,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^0.8.2":
+  version: 0.8.8
+  resolution: "@emotion/is-prop-valid@npm:0.8.8"
+  dependencies:
+    "@emotion/memoize": 0.7.4
+  checksum: bb7ec6d48c572c540e24e47cc94fc2f8dec2d6a342ae97bc9c8b6388d9b8d283862672172a1bb62d335c02662afe6291e10c71e9b8642664a8b43416cdceffac
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:0.7.4":
+  version: 0.7.4
+  resolution: "@emotion/memoize@npm:0.7.4"
+  checksum: 4e3920d4ec95995657a37beb43d3f4b7d89fed6caa2b173a4c04d10482d089d5c3ea50bbc96618d918b020f26ed6e9c4026bbd45433566576c1f7b056c3271dc
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -1659,6 +1675,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^10.12.20":
+  version: 10.12.20
+  resolution: "framer-motion@npm:10.12.20"
+  dependencies:
+    "@emotion/is-prop-valid": ^0.8.2
+    tslib: ^2.4.0
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 2be1dee2235d4ee40780aa4ff1188121b268b8d8313facc11aabf25d0e44047c2d835e25a78d80346935c7fdeb85a34665883c5ecc3d1b5396702d8bcfc5c7bc
+  languageName: node
+  linkType: hard
+
 "fs-minipass@npm:^2.0.0":
   version: 2.1.0
   resolution: "fs-minipass@npm:2.1.0"
@@ -2757,7 +2794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:13.4.9":
+"next@npm:latest":
   version: 13.4.9
   resolution: "next@npm:13.4.9"
   dependencies:
@@ -3161,7 +3198,8 @@ __metadata:
     autoprefixer: 10.4.14
     eslint: 8.44.0
     eslint-config-next: 13.4.9
-    next: 13.4.9
+    framer-motion: ^10.12.20
+    next: latest
     postcss: 8.4.26
     react: 18.2.0
     react-dom: 18.2.0
